@@ -30,7 +30,7 @@ export default function Hero() {
               <span className="italic font-normal text-forest-700 underline decoration-forest-400/50 decoration-2 underline-offset-4">
                 native apps
               </span>
-              , robust backends, and elegant web platforms.
+              ,  backends, and web platforms.
             </h1>
 
             {/* About Me Story & Narrative */}
