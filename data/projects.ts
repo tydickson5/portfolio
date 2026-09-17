@@ -91,6 +91,12 @@ export const projectsData: Project[] = [
         summary:
           "Firebase used for auth and database management",
       },
+      {
+        component: "Website",
+        tech: "HTML, CSS, Javascript",
+        summary:
+          "Simple webiste for signup page and app use instructions",
+      },
     ],
   },
   {

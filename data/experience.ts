@@ -5,7 +5,6 @@ export interface ExperienceItem {
   companyUrl?: string;
   location?: string;
   period: string;
-  type: "Internship" | "Contract" | "Operations" | "Full-Time" | "Part-Time" | "Independent";
   type: "Internship" | "Contract" | "Full-Time" | "Part-Time" | "Independent";
   description?: string;
   highlights: string[];
@@ -60,20 +59,5 @@ export const experienceData: ExperienceItem[] = [
       "Completed capstone project on bringing younger customers to community banks by the end of the summer",
     ],
     skills: ["Financial Analysis", "CISCO Networking", "Earnings Reports", "Market Research", "Strategy"],
-  },
-  {
-    id: "farmington-country-club",
-    role: "Outdoor Operations",
-    company: "Farmington Country Club",
-    location: "Charlottesville, VA",
-    period: "2025 — Present",
-    type: "Operations",
-    description:
-      "Deliver premium guest experiences, logistical coordination, and tournament operations at a premier private club.",
-    highlights: [
-      "Work to create a unique and high-quality experience for members and guests of a private club",
-      "Manage carts, clubs, driving ranges, and tournaments while giving a professional and personal experience",
-    ],
-    skills: ["Operations Management", "Client Relations", "Event Coordination", "Teamwork"],
   },
 ];

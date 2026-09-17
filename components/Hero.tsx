@@ -19,19 +19,15 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           {/* Left Column: Introduction & Narrative */}
           <div className="lg:col-span-7">
-            {/* Title & Role Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest-100 border border-forest-200 text-forest-800 text-xs font-semibold tracking-wide mb-5">
-              <span>Ty Dickson • Software Engineer</span>
+            {/* Main Title & Role */}
+            <div className="mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-forest-950 leading-tight font-serif">
+                Ty Dickson
+              </h1>
+              <p className="text-xl sm:text-2xl font-semibold text-forest-700 mt-2">
+                Software Engineer
+              </p>
             </div>
-
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-forest-950 leading-[1.15] mb-6 font-serif">
-              Building {" "}
-              <span className="italic font-normal text-forest-700 underline decoration-forest-400/50 decoration-2 underline-offset-4">
-                native apps
-              </span>
-              ,  backends, and web platforms.
-            </h1>
 
             {/* About Me Story & Narrative */}
             <div className="space-y-4 text-forest-800/95 text-base sm:text-lg leading-relaxed mb-8">
@@ -142,7 +138,6 @@ export default function Hero() {
                   <span className="text-forest-600">UVA Grounds</span>
                 </div>
                 <span className="font-mono text-[11px] font-semibold text-forest-700 bg-forest-100 px-2 py-0.5 rounded">
-                  Class of 2026
                   Class of 2028
                 </span>
               </div>

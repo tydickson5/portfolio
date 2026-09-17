@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ty Dickson | Software Engineer & Builder",
+  title: "Ty Dickson | Software Engineer",
   description:
     "Personal portfolio of Ty Dickson. Full-stack, mobile (iOS), backend systems, and data pipeline engineer. Discover Caravyn, Chef n Share, HoosJoining, Question Forecaster, and WebScraper.",
   keywords: [
