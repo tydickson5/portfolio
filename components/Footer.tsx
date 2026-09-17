@@ -59,7 +59,6 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-forest-900/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-forest-400">
           <p>© {currentYear} Ty Dickson. All rights reserved.</p>
-          <p className="italic font-serif">Designed in Dark Forest Green &amp; Warm Tan.</p>
         </div>
       </div>
     </footer>
