@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ty Dickson", url: "https://github.com/tydickson5" }],
   openGraph: {
-    title: "Ty Dickson | Software Engineer & Builder",
+    title: "Ty Dickson | Software Engineer",
     description:
       "Full-stack & mobile engineer specializing in Swift/iOS, scalable web applications, and backend systems.",
     type: "website",
