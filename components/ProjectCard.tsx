@@ -55,7 +55,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           )}
-          {project.links.github && (
+          {project.links.githubApp && (
+            <a
+              href={project.links.githubApp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-forest-900 bg-tan-100 hover:bg-tan-200 border border-tan-300 transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              <span>App Repo</span>
+            </a>
+          )}
+          {project.links.github && !project.links.githubApp && (
             <a
               href={project.links.github}
               target="_blank"
@@ -63,7 +74,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-forest-900 bg-tan-100 hover:bg-tan-200 border border-tan-300 transition-colors"
             >
               <Github className="w-4 h-4" />
-              <span>Source Code</span>
+              <span>{project.links.githubBackend ? "App Repo" : "Source Code"}</span>
+            </a>
+          )}
+          {project.links.githubBackend && (
+            <a
+              href={project.links.githubBackend}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-forest-900 bg-tan-100 hover:bg-tan-200 border border-tan-300 transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              <span>Backend / Web Repo</span>
             </a>
           )}
           {project.links.live && project.links.live !== "#" && (

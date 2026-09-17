@@ -10,6 +10,8 @@ export interface Project {
   metrics?: string;
   links: {
     github?: string;
+    githubApp?: string;
+    githubBackend?: string;
     live?: string;
     demo?: string;
     app?: string;
@@ -35,7 +37,8 @@ export const projectsData: Project[] = [
     platforms: ["iOS", "Backend", "Web"],
     tags: ["SwiftUI", "Node.js", "Nest.js", "PostgreSQL", "Mapbox", "Supabase", "Next", "Vercel"],
     links: {
-      github: "https://github.com/tydickson5/caravyn",
+      github: "https://github.com/tydickson5/caravynapp",
+      githubBackend: "https://github.com/tydickson5/activityappbackend",
       live: "https://caravyn.com",
       app: "https://testflight.apple.com/join/PxBqJVAG"
     },
