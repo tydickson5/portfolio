@@ -42,7 +42,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Action Links */}
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2.5">
+          {project.links.app && project.links.app !== "#" && (
+            <a
+              href={project.links.app}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-tan-50 bg-forest-800 hover:bg-forest-700 transition-colors shadow-sm"
+            >
+              <Smartphone className="w-3.5 h-3.5" />
+              <span>Open App</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+          )}
           {project.links.github && (
             <a
               href={project.links.github}

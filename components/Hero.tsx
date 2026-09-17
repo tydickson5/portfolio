@@ -1,19 +1,13 @@
-import { ArrowDown, ArrowUpRight, Github, Mail, Phone, Smartphone, Layers, Terminal, CheckCircle } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Github, Mail, MapPin, GraduationCap, BookOpen } from "lucide-react";
 
 export default function Hero() {
-  const principles = [
-    {
-      title: "Pragmatic Architecture",
-      desc: "Clean database models, well-bounded services, and type-safe interfaces built to scale predictably.",
-    },
-    {
-      title: "Native Fluidity & Polish",
-      desc: "Deep appreciation for platform idioms—optimizing SwiftUI render cycles, native gestures, and responsive web UX.",
-    },
-    {
-      title: "Data Integrity & Resilience",
-      desc: "Designing fault tolerance into asynchronous jobs, web scraping pipelines, and high-frequency real-time state distribution.",
-    },
+  const coursework = [
+    "Software Engineering",
+    "Data Structures & Algorithms 1 & 2",
+    "Software Development Essentials",
+    "Computer Systems & Organization 1 & 2",
+    "Discrete Mathematics & Theory 1 & 2",
+    "Mobile Application Development",
   ];
 
   return (
@@ -32,7 +26,7 @@ export default function Hero() {
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-forest-950 leading-[1.15] mb-6 font-serif">
-              Building intuitive{" "}
+              Building {" "}
               <span className="italic font-normal text-forest-700 underline decoration-forest-400/50 decoration-2 underline-offset-4">
                 native apps
               </span>
@@ -42,21 +36,20 @@ export default function Hero() {
             {/* About Me Story & Narrative */}
             <div className="space-y-4 text-forest-800/95 text-base sm:text-lg leading-relaxed mb-8">
               <p>
-                Hi, I&apos;m <span className="font-semibold text-forest-950">Ty Dickson</span>. I&apos;m a software engineer
-                passionate about turning complex systems into elegant, high-impact digital experiences. My work spans
-                native iOS applications with real-time location telemetry, scalable Node.js/PostgreSQL backends,
-                and modern Next.js web applications.
+                Hi, I&apos;m <span className="font-semibold text-forest-950">Ty Dickson</span>. I&apos;m a 3rd-year
+                Computer Science major with a General Business minor at the <span className="font-semibold text-forest-950">University of Virginia</span>.
+                I work mostly with IOS native (although I am learnign Kotlin right now) and web applications.
               </p>
               <p className="text-sm sm:text-base text-forest-800">
-                Whether architecting multi-vehicle convoy synchronization in <span className="font-semibold text-forest-950">Caravyn</span>,
-                building social culinary platforms in <span className="font-semibold text-forest-950">Chef n Share</span>, or
-                evaluating probabilistic models and data extraction pipelines, I focus on shipping software that is both technically
-                rigorous and delightful to use.
+                I have experience with IOS, various JS Frameworks, python with Django and Flask, and Java. I have also done class 
+                projects using the SCRUM methodology and built apps under pressure in hackathons. Most of my projects have gone
+                through some form of beta testing, so I know how to take feedback and improve upon what I have.
+
               </p>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3 mb-8">
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href="#projects"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-forest-900 text-tan-50 font-semibold text-sm hover:bg-forest-800 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
@@ -87,41 +80,71 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Engineering Principles & Focus Areas */}
+          {/* Right Column: Education & Coursework Card */}
           <div className="lg:col-span-5">
             <div className="p-6 sm:p-7 rounded-2xl bg-tan-50 border border-tan-300 shadow-card">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-forest-700 mb-5 flex items-center gap-2">
-                <span>Core Engineering Philosophy</span>
-              </h2>
-
-              <div className="space-y-4">
-                {principles.map((principle, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-forest-100 text-forest-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <CheckCircle className="w-3.5 h-3.5" />
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-bold text-forest-950 mb-0.5">
-                        {principle.title}
-                      </h3>
-                      <p className="text-xs text-forest-700 leading-relaxed">
-                        {principle.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+              {/* Card Header */}
+              <div className="flex items-center gap-2.5 pb-4 mb-4 border-b border-tan-200">
+                <div className="p-2 rounded-xl bg-forest-100 text-forest-800">
+                  <GraduationCap className="w-5 h-5" />
+                </div>
+                <div>
+                  <h2 className="text-xs font-bold uppercase tracking-wider text-forest-700">
+                    Education &amp; Background
+                  </h2>
+                  <p className="text-base font-bold font-serif text-forest-950">
+                    University of Virginia (UVA)
+                  </p>
+                </div>
               </div>
 
-              {/* Quick Spec Strip */}
-              <div className="mt-6 pt-5 border-t border-tan-200 grid grid-cols-2 gap-4 text-xs">
-                <div>
-                  <span className="block font-semibold uppercase text-forest-600">Location</span>
-                  <span className="font-bold text-forest-950 text-sm">Charlottesville / Remote</span>
+              {/* Major & Minor Details */}
+              <div className="space-y-1.5 mb-5 text-sm">
+                <div className="flex items-baseline justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest-600">Standing</span>
+                  <span className="font-semibold text-forest-950">3rd Year Undergraduate</span>
                 </div>
-                <div>
-                  <span className="block font-semibold uppercase text-forest-600">Specialization</span>
-                  <span className="font-bold text-forest-950 text-sm">Full-Stack &amp; iOS</span>
+                <div className="flex items-baseline justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest-600">Major</span>
+                  <span className="font-semibold text-forest-950">Computer Science</span>
                 </div>
+                <div className="flex items-baseline justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest-600">Minor</span>
+                  <span className="font-semibold text-forest-950">General Business</span>
+                </div>
+              </div>
+
+              {/* Coursework Section */}
+              <div className="pt-4 border-t border-tan-200">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-forest-700 mb-3 flex items-center gap-1.5">
+                  <BookOpen className="w-3.5 h-3.5 text-forest-600" />
+                  <span>Relevant Coursework</span>
+                </h3>
+
+                <div className="flex flex-wrap gap-1.5">
+                  {coursework.map((course) => (
+                    <span
+                      key={course}
+                      className="px-2.5 py-1 rounded-lg text-xs font-medium bg-tan-100/90 text-forest-900 border border-tan-300 hover:border-forest-400 transition-colors"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Location Footer Strip */}
+              <div className="mt-5 pt-4 border-t border-tan-200 flex items-center justify-between text-xs">
+                <div className="flex items-center gap-1.5 text-forest-800">
+                  <MapPin className="w-3.5 h-3.5 text-forest-600" />
+                  <span className="font-semibold">Charlottesville, VA</span>
+                  <span className="text-forest-400">•</span>
+                  <span className="text-forest-600">UVA Grounds</span>
+                </div>
+                <span className="font-mono text-[11px] font-semibold text-forest-700 bg-forest-100 px-2 py-0.5 rounded">
+                  Class of 2026
+                  Class of 2028
+                </span>
               </div>
             </div>
           </div>

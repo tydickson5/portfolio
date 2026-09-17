@@ -5,7 +5,7 @@ import { FolderGit2 } from "lucide-react";
 import { projectsData } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 
-const CATEGORIES = ["All", "Full-Stack", "Mobile", "Data & Tools"] as const;
+const CATEGORIES = ["All", "Full-Stack", "Mobile", "Web", "Data & Tools"] as const;
 type CategoryType = (typeof CATEGORIES)[number];
 
 export default function Projects() {

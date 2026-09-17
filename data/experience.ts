@@ -3,62 +3,77 @@ export interface ExperienceItem {
   role: string;
   company: string;
   companyUrl?: string;
-  location: string;
+  location?: string;
   period: string;
-  type: "Full-Time" | "Contract" | "Internship" | "Independent";
-  description: string;
+  type: "Internship" | "Contract" | "Operations" | "Full-Time" | "Part-Time" | "Independent";
+  type: "Internship" | "Contract" | "Full-Time" | "Part-Time" | "Independent";
+  description?: string;
   highlights: string[];
   skills: string[];
 }
 
 export const experienceData: ExperienceItem[] = [
   {
-    id: "lead-engineer-caravyn",
-    role: "Lead Software & iOS Engineer",
-    company: "Caravyn",
-    location: "Charlottesville, VA / Remote",
-    period: "2024 — Present",
-    type: "Independent",
+    id: "patriot-development-corp",
+    role: "Intern",
+    company: "Patriot Development Corporation",
+    location: "Dulles, VA",
+    period: "Summer 2026",
+    type: "Internship",
     description:
-      "Architected and engineered an end-to-end synchronized convoy navigation platform across native iOS, real-time Node.js backend, and Next.js web application.",
+      "Modernized internal accounting systems, infrastructure, and field telemetry tracking software across company operations.",
     highlights: [
-      "Engineered native iOS client with SwiftUI, CoreLocation, and Mapbox SDK with offline route caching and low-latency proximity radar",
-      "Designed and deployed event-driven WebSocket and Redis pub/sub telemetry service delivering sub-100ms coordinate synchronization",
-      "Built responsive web trip planner and spectator tracking portal with Next.js and Tailwind CSS",
+      "Improved accounting and truck fuel management systems through increasing utility of large Excel tracking sheets with Visual Basic and Python",
+      "Updated public website UI, created employee site, and helped convert company computers to Microsoft Azure",
+      "Assisted with the testing of an in-house mobile app and third-party software for truck fuel tracking for contracted companies",
     ],
-    skills: ["Swift", "SwiftUI", "Node.js", "WebSockets", "Redis", "Next.js", "PostgreSQL"],
+    skills: ["Python", "Visual Basic (VBA)", "Microsoft Azure", "Web UI", "Mobile App Testing", "Excel Automation"],
   },
   {
-    id: "full-stack-developer",
-    role: "Full-Stack Software Engineer",
-    company: "Chef n Share & HoosJoining",
-    location: "Charlottesville, VA",
-    period: "2023 — 2024",
-    type: "Contract",
-    description:
-      "Developed high-engagement social discovery and community web applications with responsive user interfaces and real-time backend state management.",
-    highlights: [
-      "Created dynamic recipe scaling algorithm and ingredient pantry matching for culinary discovery platform",
-      "Engineered real-time meetup broadcast engine with optimistic UI updates and instant RSVP tracking",
-      "Implemented secure relational schema, row-level authentication, and media storage pipelines",
-    ],
-    skills: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Firebase", "Supabase", "REST APIs"],
-  },
-  {
-    id: "systems-data-engineer",
-    role: "Data Systems & Pipeline Developer",
-    company: "Data & Scraping Infrastructure",
+    id: "ember-fellowship",
+    role: "Contracted Software Engineer",
+    company: "Ember Fellowship",
     location: "Remote",
-    period: "2023 — 2023",
+    period: "2025 — 2026",
     type: "Contract",
     description:
-      "Built resilient asynchronous crawler engines and statistical forecasting analysis tools for structured dataset extraction.",
+      "Developed web intelligence and data collection automation engines to systematically track hiring and career opportunity listings.",
     highlights: [
-      "Designed fault-tolerant web crawler using Python, Playwright, and Asyncio with proxy rotation and rate-limit mitigation",
-      "Automated Pydantic schema validation ensuring clean normalized data exports to PostgreSQL and JSONL",
-      "Implemented Bayesian scoring and calibration visualization modules in Python and FastAPI",
+      "Contributed with writing programs to scrape target company listings to help track career opportunities",
+      "Utilized Python web scraping frameworks (Scrapy and Selenium) to collect, clean, and process structured data",
     ],
-    skills: ["Python", "Playwright", "FastAPI", "Pandas", "Docker", "PostgreSQL", "Asyncio"],
+    skills: ["Python", "Scrapy", "Selenium", "Web Scraping", "Data Pipelines", "Automation"],
+  },
+  {
+    id: "first-bank-virginia",
+    role: "Intern",
+    company: "First Bank (Virginia)",
+    location: "Virginia",
+    period: "Summer 2025",
+    type: "Internship",
+    description:
+      "Contributed to quarterly financial reporting, branch network integration, and market research initiatives.",
+    highlights: [
+      "Wrote major parts of third and fourth quarter earnings reports and updated investor financial reports",
+      "Set up CISCO routers and switches for newly acquired Touchstone branches in recent merger",
+      "Researched markets, expansion plans, mergers, and community outreach opportunities",
+      "Completed capstone project on bringing younger customers to community banks by the end of the summer",
+    ],
+    skills: ["Financial Analysis", "CISCO Networking", "Earnings Reports", "Market Research", "Strategy"],
+  },
+  {
+    id: "farmington-country-club",
+    role: "Outdoor Operations",
+    company: "Farmington Country Club",
+    location: "Charlottesville, VA",
+    period: "2025 — Present",
+    type: "Operations",
+    description:
+      "Deliver premium guest experiences, logistical coordination, and tournament operations at a premier private club.",
+    highlights: [
+      "Work to create a unique and high-quality experience for members and guests of a private club",
+      "Manage carts, clubs, driving ranges, and tournaments while giving a professional and personal experience",
+    ],
+    skills: ["Operations Management", "Client Relations", "Event Coordination", "Teamwork"],
   },
 ];
-

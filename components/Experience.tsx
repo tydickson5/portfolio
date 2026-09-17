@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, MapPin, CheckCircle2, ArrowUpRight, FileText } from "lucide-react";
+import { Briefcase, Calendar, MapPin, CheckCircle2, FileText } from "lucide-react";
 import { experienceData } from "@/data/experience";
 
 export default function Experience() {
@@ -16,12 +16,11 @@ export default function Experience() {
               Work Experience
             </h2>
             <p className="text-forest-700 text-base mt-2 max-w-xl">
-              Track record of designing, building, and deploying production-grade mobile applications,
-              backend architectures, and data infrastructure.
+              Professional history across software engineering, systems automation, financial analysis, and operations.
             </p>
           </div>
 
-          {/* Quick resume link or contact CTA */}
+          {/* Quick resume link / contact CTA */}
           <div>
             <a
               href="#contact"
@@ -48,11 +47,15 @@ export default function Experience() {
                   </h3>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm font-semibold text-forest-700 mt-1">
                     <span className="text-forest-950">{exp.company}</span>
-                    <span className="text-tan-400">•</span>
-                    <span className="flex items-center gap-1 font-normal text-forest-700">
-                      <MapPin className="w-3.5 h-3.5 text-forest-600" />
-                      <span>{exp.location}</span>
-                    </span>
+                    {exp.location && (
+                      <>
+                        <span className="text-tan-400">•</span>
+                        <span className="flex items-center gap-1 font-normal text-forest-700">
+                          <MapPin className="w-3.5 h-3.5 text-forest-600" />
+                          <span>{exp.location}</span>
+                        </span>
+                      </>
+                    )}
                   </div>
                 </div>
 
@@ -68,36 +71,40 @@ export default function Experience() {
               </div>
 
               {/* Description */}
-              <p className="text-sm sm:text-base text-forest-800/95 leading-relaxed my-4">
-                {exp.description}
-              </p>
+              {exp.description && (
+                <p className="text-sm sm:text-base text-forest-800/95 leading-relaxed my-4">
+                  {exp.description}
+                </p>
+              )}
 
               {/* Highlights Bullet points */}
               {exp.highlights && exp.highlights.length > 0 && (
-                <div className="space-y-2 mb-5">
+                <div className="space-y-2.5 my-4">
                   {exp.highlights.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-forest-800">
                       <CheckCircle2 className="w-4 h-4 text-forest-600 mt-0.5 flex-shrink-0" />
-                      <span>{item}</span>
+                      <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
               )}
 
               {/* Tech Stack Chips */}
-              <div className="flex flex-wrap items-center gap-1.5 pt-4 border-t border-tan-200">
-                <span className="text-xs font-bold uppercase tracking-wider text-forest-700 mr-2">
-                  Skills:
-                </span>
-                {exp.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-tan-100 text-forest-900 border border-tan-300"
-                  >
-                    {skill}
+              {exp.skills && exp.skills.length > 0 && (
+                <div className="flex flex-wrap items-center gap-1.5 pt-4 border-t border-tan-200">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest-700 mr-2">
+                    Skills:
                   </span>
-                ))}
-              </div>
+                  {exp.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-0.5 rounded text-xs font-mono font-medium bg-tan-100 text-forest-900 border border-tan-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -105,4 +112,3 @@ export default function Experience() {
     </section>
   );
 }
-

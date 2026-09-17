@@ -42,12 +42,6 @@ export default function Footer() {
               Experience
             </a>
             <a
-              href="#skills"
-              className="hover:text-tan-100 transition-colors"
-            >
-              Skills
-            </a>
-            <a
               href="#contact"
               className="hover:text-tan-100 transition-colors"
             >

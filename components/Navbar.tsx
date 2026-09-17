@@ -51,12 +51,6 @@ export default function Navbar() {
             Experience
           </a>
           <a
-            href="#skills"
-            className="hover:text-forest-950 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-forest-700 hover:after:w-full after:transition-all"
-          >
-            Skills
-          </a>
-          <a
             href="#contact"
             className="hover:text-forest-950 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-forest-700 hover:after:w-full after:transition-all"
           >
@@ -102,13 +96,6 @@ export default function Navbar() {
               className="px-3 py-2 rounded-md hover:bg-tan-200 transition-colors"
             >
               Experience
-            </a>
-            <a
-              href="#skills"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-md hover:bg-tan-200 transition-colors"
-            >
-              Skills
             </a>
             <a
               href="#contact"
