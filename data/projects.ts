@@ -14,6 +14,7 @@ export interface Project {
     demo?: string;
     app?: string;
   };
+  image?: string;
   highlights: string[];
   architecture?: {
     component: string;
@@ -38,6 +39,7 @@ export const projectsData: Project[] = [
       live: "https://caravyn.com",
       app: "https://testflight.apple.com/join/PxBqJVAG"
     },
+    image: "/assets/Caravyn.png",
     highlights: [
       "Interactive world map (MapKit) with users posts and trips for friends or the public to see",
       "Nest and NodeJS backend with connection to Supabase for PostgreSQL database management",
@@ -79,6 +81,7 @@ export const projectsData: Project[] = [
       live: "https://roommate-app-site.vercel.app/index.html",
       app: "https://testflight.apple.com/join/t5Bpvd5P"
     },
+    image: "/assets/chefnshare.jpg",
     highlights: [
       "Item tracking list with reodering, sorting, item lookup, and live state changing",
       "Group sharing, joining, and creating",

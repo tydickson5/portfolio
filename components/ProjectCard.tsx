@@ -80,14 +80,25 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
 
-      {/* Title & Tagline */}
-      <div className="mt-6 mb-4">
-        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-forest-950 tracking-tight">
-          {project.title}
-        </h3>
-        <p className="text-sm sm:text-base font-medium text-forest-700 mt-1.5">
-          {project.tagline}
-        </p>
+      {/* Title & Tagline with optional Project App Icon */}
+      <div className="mt-6 mb-5 flex items-start gap-4 sm:gap-5">
+        {project.image && (
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 rounded-2xl overflow-hidden border border-tan-300 bg-white shadow-subtle p-1">
+            <img
+              src={project.image}
+              alt={`${project.title} logo`}
+              className="w-full h-full object-contain rounded-xl"
+            />
+          </div>
+        )}
+        <div className="flex-1 min-w-0">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-forest-950 tracking-tight">
+            {project.title}
+          </h3>
+          <p className="text-sm sm:text-base font-medium text-forest-700 mt-1.5">
+            {project.tagline}
+          </p>
+        </div>
       </div>
 
       {/* Main Narrative Description */}

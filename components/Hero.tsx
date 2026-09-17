@@ -34,10 +34,10 @@ export default function Hero() {
               <p>
                 Hi, I&apos;m <span className="font-semibold text-forest-950">Ty Dickson</span>. I&apos;m a 3rd-year
                 Computer Science major with a General Business minor at the <span className="font-semibold text-forest-950">University of Virginia</span>.
-                I work mostly with IOS native (although I am learnign Kotlin right now) and web applications.
+                I work mostly with IOS native (although I am learning Kotlin right now) and web applications.
               </p>
               <p className="text-sm sm:text-base text-forest-800">
-                I have experience with IOS, various JS Frameworks, python with Django and Flask, and Java. I have also done class 
+                I have experience with IOS, various JS Frameworks, Python with Django and Flask, and Java. I have also done class 
                 projects using the SCRUM methodology and built apps under pressure in hackathons. Most of my projects have gone
                 through some form of beta testing, so I know how to take feedback and improve upon what I have.
 
