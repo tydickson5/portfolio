@@ -46,7 +46,7 @@ export const projectsData: Project[] = [
     highlights: [
       "Interactive world map (MapKit) with users posts and trips for friends or the public to see",
       "Nest and NodeJS backend with connection to Supabase for PostgreSQL database management",
-      "Website with beta testing application form plus interactie mapbox map for showing example trips",
+      "Website with beta testing application form plus interactive mapbox map for showing example trips",
     ],
     architecture: [
       {
@@ -101,7 +101,7 @@ export const projectsData: Project[] = [
         component: "Website",
         tech: "HTML, CSS, Javascript",
         summary:
-          "Simple webiste for signup page and app use instructions",
+          "Simple website for signup page and app use instructions",
       },
     ],
   },
@@ -148,7 +148,7 @@ export const projectsData: Project[] = [
     highlights: [
       "Upload lesson to site",
       "ChatGPT API analyzes lesson and predicts potential questions/problems students might have",
-      "Return questions/problems ranked by likleyhood to happen",
+      "Return questions/problems ranked by liklyhood to happen",
     ],
     architecture: [
       {
