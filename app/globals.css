@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-tan: #F5F2EB;
+  --bg-tan-surface: #FAF8F4;
+  --bg-tan-elevated: #EDE7DC;
+  --text-forest-900: #142E23;
+  --text-forest-700: #26543A;
+  --text-forest-muted: #496354;
+  --border-tan: #DFD7C7;
+  --border-tan-light: #ECE5D8;
+  --accent-forest: #1E4331;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F5F2EB;
+}
+
+body {
+  background-color: #F5F2EB !important;
+  color: #142E23 !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: #26543A;
+  color: #F5F2EB;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFE9DC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #39634D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #254B38;
+}
+
+/* Organic textured grain effect (pure CSS) */
+.grain-overlay {
+  background-image: radial-gradient(rgba(20, 46, 35, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
